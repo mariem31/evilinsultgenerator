@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-
+import './Accueil.css';
 
 const Accueil = () => {
 
@@ -18,14 +18,16 @@ const Accueil = () => {
 
 return ( 
     <div> 
-        <h1>TEST</h1>
-        <button onClick={() => getData()}>CLICK</button>
-        {insult !== [] && 
-                <div>
-                     <p>{insult.number}</p>
+        <h1>Evil insult generator</h1>
+            {insult !== [] && 
+                <div className="joke">
+                     {/* <p>{insult.number}</p> */}
                      <p>{insult.insult}</p>
                 </div>
         }
+        <div className="containerButton">
+            <button className="button" onClick={() => getData()}>CLICK</button>
+        </div>
     </div>
 )}
 

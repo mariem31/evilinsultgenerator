@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+.button {
+ 
+  margin-top: 15px;
+
+}
+.containerButton {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.joke {
+  border-color: black;
+  border-style: dotted;
+}
